@@ -1,7 +1,5 @@
 def cais_in_check(piece, position, king_pos, board):
-    """
-    ตรวจสอบว่าตัวหมากสามารถโจมตี King ได้หรือไม่
-    """
+    
     directions = {
         'P': [(-1, -1), (-1, 1)],  
         'B': [(-1, -1), (-1, 1), (1, -1), (1, 1)],  
@@ -34,10 +32,7 @@ def cais_in_check(piece, position, king_pos, board):
 
 
 def is_in_check(board):
-    """
-    ตรวจสอบว่ามีตัวหมากใดสามารถโจมตี King ได้หรือไม่
-    """
-    
+   
     king_pos = None
     for i, row in enumerate(board):
         for j, cell in enumerate(row):
